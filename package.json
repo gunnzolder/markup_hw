@@ -1,0 +1,29 @@
+{
+  "name": "markup_hw",
+  "version": "1.0.0",
+  "description": "HTML/CSS cources homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gunnzolder/markup_hw.git"
+  },
+  "author": "Anton Parkhomenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gunnzolder/markup_hw/issues"
+  },
+  "homepage": "https://github.com/gunnzolder/markup_hw",
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "csswring": "^3.0.5",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-consolidate": "^0.1.2",
+    "gulp-dest": "^0.2.2",
+    "gulp-postcss": "^5.1.10",
+    "gulp-sass": "^2.0.4"
+  }
+}
