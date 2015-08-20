@@ -1,4 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald);
+/*
+* Cleanliness of code was sacrificed to the closeness to the mockup.
+* That's why so many XXpx. Sorry.
+*/
 body {
   margin: 0;
 }
