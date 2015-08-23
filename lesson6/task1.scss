@@ -1,0 +1,164 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+/* VARIABLES */
+
+$block-name: 'banner';
+
+$color-standard: #37c2d3;
+$color-standard-border: #e8eaec;
+$color-standard-button: #3371a6;
+$color-best-value: #EE8129;
+$color-ultimate: #1cb79a;
+$color-secondary: white;
+
+$color-text-header: #3f4042;
+$color-text-price: #35495a;
+$color-text-list: #3f4042;
+
+/* MIXINS */
+
+@mixin make-cta-button($base-color) {
+  background-color: $base-color;
+  box-shadow: 0 3px 0 0 darken($base-color, 20%);
+  &:hover {
+    background-color: darken($base-color, 5%);
+  }
+  &:active {
+    position: relative;
+    top: 2px;
+    box-shadow: 0 1px 0 0 darken($base-color, 20%);
+  }
+}
+
+/* BASE STYLES */
+
+.#{$block-name} {
+  background-repeat: no-repeat;
+  width: 288px;
+  font-family: Roboto, sans-serif;;
+  border-radius: 4px;
+
+  &--best-value {
+    background-color: $color-best-value;
+    padding: 3px;
+    box-shadow: 0 0 10px #999;
+    position: relative;
+    top: -10px;
+
+    .#{$block-name}__cta {
+      @include make-cta-button($color-best-value);
+      }
+
+    .#{$block-name}__content {
+      padding-bottom: 24px;
+    }
+    .#{$block-name}__top-header {
+      padding-top: 31px;
+    }
+  }
+  &--standard {
+    background-color: $color-standard;
+    border: 1px solid $color-standard-border;
+
+    .#{$block-name}__cta {
+      @include make-cta-button($color-standard-button);
+    }
+  }
+  &--ultimate {
+    background-color: $color-ultimate;
+    border: 1px solid $color-standard-border;
+
+    .#{$block-name}__cta {
+      @include make-cta-button($color-standard-button);
+    }
+  }
+
+  &__top-header {
+    color: $color-secondary;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 23px 0;
+  }
+  &__content {
+    background: $color-secondary;
+    padding: 14px 18px;
+  }
+  &__header {
+    text-transform: uppercase;
+    color: $color-text-header;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+  }
+  &__price {
+    color: $color-text-price;
+    font-weight: 600;
+    padding: 12px 0 20px;
+    font-size: 72px;
+    text-align: center;
+
+    &--up {
+      font-size: 22px;
+      position: relative;
+      top: -40px;
+      font-weight: 600;
+    }
+    &--down {
+      font-size: 18px;
+      position: relative;
+      top: 10px;
+      font-weight: 400;
+    }
+  }
+  &__features {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__feature {
+    color: #888c94;
+    background: url('task2-assets/checkmark.svg') no-repeat 30px;
+    padding: 8px 0 8px 60px;
+    margin: 1px;
+
+    &:nth-child(odd) {
+      background-color: #edf5fd
+    }
+    &:nth-child(even) {
+      background-color: #f5f5f6
+    }
+  }
+  &__cta {
+    color: $color-secondary;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 15px 0;
+  }
+}
+
+
+
+/* HELPERS */
+
+body {
+  padding: 30px;
+  margin: 0;
+}
+
+img {
+  float: left;
+  margin-left: 20px;
+}
+
+.banner {
+  float: left;
+}
+

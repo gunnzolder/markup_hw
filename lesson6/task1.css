@@ -1,0 +1,174 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+/* VARIABLES */
+/* MIXINS */
+/* BASE STYLES */
+.banner {
+  background-repeat: no-repeat;
+  width: 288px;
+  font-family: Roboto, sans-serif;
+  border-radius: 4px;
+}
+
+.banner--best-value {
+  background-color: #EE8129;
+  padding: 3px;
+  box-shadow: 0 0 10px #999;
+  position: relative;
+  top: -10px;
+}
+
+.banner--best-value .banner__cta {
+  background-color: #EE8129;
+  box-shadow: 0 3px 0 0 #a4500d;
+}
+
+.banner--best-value .banner__cta:hover {
+  background-color: #eb7313;
+}
+
+.banner--best-value .banner__cta:active {
+  position: relative;
+  top: 2px;
+  box-shadow: 0 1px 0 0 #a4500d;
+}
+
+.banner--best-value .banner__content {
+  padding-bottom: 24px;
+}
+
+.banner--best-value .banner__top-header {
+  padding-top: 31px;
+}
+
+.banner--standard {
+  background-color: #37c2d3;
+  border: 1px solid #e8eaec;
+}
+
+.banner--standard .banner__cta {
+  background-color: #3371a6;
+  box-shadow: 0 3px 0 0 #1b3c58;
+}
+
+.banner--standard .banner__cta:hover {
+  background-color: #2d6492;
+}
+
+.banner--standard .banner__cta:active {
+  position: relative;
+  top: 2px;
+  box-shadow: 0 1px 0 0 #1b3c58;
+}
+
+.banner--ultimate {
+  background-color: #1cb79a;
+  border: 1px solid #e8eaec;
+}
+
+.banner--ultimate .banner__cta {
+  background-color: #3371a6;
+  box-shadow: 0 3px 0 0 #1b3c58;
+}
+
+.banner--ultimate .banner__cta:hover {
+  background-color: #2d6492;
+}
+
+.banner--ultimate .banner__cta:active {
+  position: relative;
+  top: 2px;
+  box-shadow: 0 1px 0 0 #1b3c58;
+}
+
+.banner__top-header {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 23px 0;
+}
+
+.banner__content {
+  background: white;
+  padding: 14px 18px;
+}
+
+.banner__header {
+  text-transform: uppercase;
+  color: #3f4042;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+.banner__price {
+  color: #35495a;
+  font-weight: 600;
+  padding: 12px 0 20px;
+  font-size: 72px;
+  text-align: center;
+}
+
+.banner__price--up {
+  font-size: 22px;
+  position: relative;
+  top: -40px;
+  font-weight: 600;
+}
+
+.banner__price--down {
+  font-size: 18px;
+  position: relative;
+  top: 10px;
+  font-weight: 400;
+}
+
+.banner__features {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.banner__feature {
+  color: #888c94;
+  background: url("task2-assets/checkmark.svg") no-repeat 30px;
+  padding: 8px 0 8px 60px;
+  margin: 1px;
+}
+
+.banner__feature:nth-child(odd) {
+  background-color: #edf5fd;
+}
+
+.banner__feature:nth-child(even) {
+  background-color: #f5f5f6;
+}
+
+.banner__cta {
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+/* HELPERS */
+body {
+  padding: 30px;
+  margin: 0;
+}
+
+img {
+  float: left;
+  margin-left: 20px;
+}
+
+.banner {
+  float: left;
+}
